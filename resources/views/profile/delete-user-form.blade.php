@@ -13,7 +13,7 @@
         </div>
 
         <div class="mt-5">
-            <x-jet-danger-button wire:click="confirmUserDeletion" wire:loading.attr="disabled">
+            <x-jet-danger-button wire:click="confirmUserDeletion" wire:loading.attr="disabled" class="btn btn-warning">
                 {{ __('Delete Account') }}
             </x-jet-danger-button>
         </div>
@@ -32,18 +32,18 @@
                                 placeholder="{{ __('Password') }}"
                                 x-ref="password"
                                 wire:model.defer="password"
-                                wire:keydown.enter="deleteUser" />
+                                wire:keydown.enter="deleteUser" class="form-control" />
 
                     <x-jet-input-error for="password" class="mt-2" />
                 </div>
             </x-slot>
 
             <x-slot name="footer">
-                <x-jet-secondary-button wire:click="$toggle('confirmingUserDeletion')" wire:loading.attr="disabled">
+                <x-jet-secondary-button wire:click="$toggle('confirmingUserDeletion')" wire:loading.attr="disabled" class="btn btn-warning">
                     {{ __('Nevermind') }}
                 </x-jet-secondary-button>
 
-                <x-jet-danger-button class="ml-2" wire:click="deleteUser" wire:loading.attr="disabled">
+                <x-jet-danger-button class="ml-2" wire:click="deleteUser" wire:loading.attr="disabled" class="btn btn-warning">
                     {{ __('Delete Account') }}
                 </x-jet-danger-button>
             </x-slot>
