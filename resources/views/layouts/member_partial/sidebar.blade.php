@@ -7,28 +7,38 @@
                     <li>
                         <a href="{{route('dashboard')}}" class="active"><i class="material-icons">dashboard</i>Dashboard</a>
                     </li>
+                    
                     <li>
-                        <a href="{{route('chapter.index')}}"><i class="material-icons">person_outline</i>Chapter</a>
+                        <a href="{{route('specialty.index')}}"><i class="material-icons">person_outline</i>Forums</a>
                     </li>
                     <li>
-                        <a href="{{route('specialty.index')}}"><i class="material-icons">person_outline</i>Specialty</a>
+                        <a href="#"><i class="material-icons">text_format</i>Forum<i class="material-icons has-sub-menu">keyboard_arrow_left</i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="{{route('member.question.index')}}">Personal</a>
+                            </li>
+                            <li>
+                                <a href="{{route('forum.index')}}">Explore</a>
+                            </li>
+                            
+                        </ul>
                     </li>
-                    <li>
-                        <a href="{{route('member.show')}}"><i class="material-icons">inbox</i>Member</a>
-                    </li> 
                     <li>
                         <a href="#"><i class="material-icons">text_format</i>Articles<i class="material-icons has-sub-menu">keyboard_arrow_left</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="{{route('admin.article.unpublished')}}">Unplublish</a>
+                                <a href="{{route('article.personal')}}">Personal</a>
                             </li>
                             <li>
-                                <a href="{{route('admin.article.published')}}">Published</a>
+                                <a href="{{route('article.index')}}">Explore</a>
                             </li>
-                           
+                            
                         </ul>
                     </li>
                     {{-- <li>
+                        <a href="mailbox.html"><i class="material-icons">inbox</i>Mailbox</a>
+                    </li>
+                    <li>
                         <a href="todo.html"><i class="material-icons">done_all</i>Todo</a>
                     </li>
                     <li>

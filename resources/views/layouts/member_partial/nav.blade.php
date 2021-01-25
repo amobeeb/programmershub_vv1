@@ -5,7 +5,7 @@
                 <span class="material-design-hamburger__layer"></span>
             </a>
         </section>
-        <a class="navbar-brand" href="{{route('dashboard')}}">Programmers' Hub</a>
+        <a class="navbar-brand" href="{{route('dashboard')}}">Programmers' Hub NG</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="material-icons">keyboard_arrow_down</i>
         </button>
@@ -26,7 +26,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li><a class="dropdown-item" href="{{ route('profile.show') }}">Account</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="{{ route('member.settings') }}">Settings</a></li>
                         <li class="divider"></li>
                         <li>
                             <form method="POST" action="{{ route('logout') }}">

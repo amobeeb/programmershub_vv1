@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +9,7 @@
         <meta name="author" content="stacks">
         
         <!-- Title -->
-        <title>Administrator | Programmers' Hub</title>
+        <title>Member | Programmers' Hub</title>
 
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">

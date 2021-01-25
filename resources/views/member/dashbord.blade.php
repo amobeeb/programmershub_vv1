@@ -1,6 +1,9 @@
-<x-app-layout>
+@extends('layouts.member')
    
-    <div class="lime-container">
+@section('contents')
+    
+
+     <div class="lime-container">
         <div class="lime-body">
             <div class="container">
                 <div class="row">
@@ -219,5 +222,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-</x-app-layout>
+        </div>  
+        @endsection
